@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nando's | PERi-PERi Chicken</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://db.onlinewebfonts.com/c/6fc835b71af69222366fb9c510a3edb1?family=Nandos-Regular" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <!-- Mobile View --> 
+      <div class="d-flex align-items-center justify-content-end d-lg-none flex-nowrap" style="width: 100%;">
+          <button type="button" class="btn btn-success mx-2">ORDER ONLINE</button>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+      </div>
+  
+      <div class="container-fluid">
+          <div class="row">
+              <!-- Logo for large screens -->
+              <div class="col-12 d-none d-lg-block">
+                  <img src="barci.svg" alt="" class="img-fluid" height="100" width="80" />
+              </div>
+              <!-- Logo for small screens -->
+              <div class="col-12 d-lg-none">
+                  <img src="nandos.jpg" alt="Mobile Image" class="img-fluid" height="40" width="40" />
+              </div>
+          </div>
+  
+          <!-- Collapsible Navbar -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                  <li class="nav-item ms-4">
+                      <a class="nav-link" href="#" aria-current="page">MENU</a>
+                  </li>
+                  <li class="nav-item mx-2">
+                      <a class="nav-link" href="#">RESTAURANTS</a>
+                  </li>
+                  <li class="nav-item dropdown mx-2 ml-3">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">NANDO'S REWARDS</a>
+                      <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Join Now</a></li>
+                          <li><a class="dropdown-item" href="#">How it works</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item dropdown mx-2">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">COOK</a>
+                  <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Products</a></li>
+                      <li><a class="dropdown-item" href="#">Recipes</a></li>
+                  </ul>
+                </li>
+                  <li class="nav-item mx-2">
+                    <a class="nav-link" href="#">SHOP</a>
+                </li>
+
+
+                <li class="nav-item dropdown mx-2">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">ABOUT US</a>
+                  <ul class="dropdown-menu">
+                      <li><p><b>ABOUT</b></p></li>
+                      <li><a class="dropdown-item" href="#">Food</a></li>
+                      <li><a class="dropdown-item" href="#">Fighting Malaria</a></li>
+                      <li><a class="dropdown-item" href="#">Being Sustainable</a></li>
+                      
+                      <li><p><b>CONNECT</b></p></li>
+                      <li><a class="dropdown-item" href="#">The Nando's App</a></li>
+                      <li><a class="dropdown-item" href="#">News</a></li>
+                     
+                      <li><p><b>EXPERIENCE</b></p></li>
+                      <li><a class="dropdown-item" href="#">This is PERi-PERi</a></li>
+                      <li><a class="dropdown-item" href="#">Music</a></li>
+                      <li><a class="dropdown-item" href="#">Art</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown mx-2">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">HELP</a>
+                <ul class="dropdown-menu">
+                    <li><p><b>FAQs</b></p></li>
+                    <li><a class="dropdown-item" href="#">Search FAQs</a></li>
+                    <li><a class="dropdown-item" href="#">My Account</a></li>
+                    <li><a class="dropdown-item" href="#">Food</a></li>
+                    <li><a class="dropdown-item" href="#">Online Ordering</a></li>
+                    <li><a class="dropdown-item" href="#">Restaurants</a></li>
+                    <li><a class="dropdown-item" href="#">Nando's Card & Discounts</a></li>
+                    <li><a class="dropdown-item" href="#">Fundraising Requests</a></li>
+                    <li><a class="dropdown-item" href="#">Sustainability</a></li>
+                    <li><p><b>CONTACT</b></p></li>
+                    <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                    <li><p><b>RESOURCES</b></p></li>
+                    <li><a class="dropdown-item" href="#">Press Gallery</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#">CAREERS</a>
+            </li>
+
+                  
+              </ul>
+  
+              <!-- Profile Icon (aligned right for large screens) -->
+              <img src="profile.svg" class="ms-auto d-none d-lg-block" alt="Profile" />
+          </div>
+  
+          <!-- Right side buttons for large screens -->
+          <div class="d-none d-lg-block">
+              <button type="button" class="btn btn-primary">Order Online</button>
+          </div>
+      </div>
+  </nav>
+      <!-- Carousel section  -->
+      <div
+      id="carouselExampleControls"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="fanta.jpg" class="cimg d-block object-fit-cover" alt="Slide 1" />
+          <div class="section carousel-caption d-flex flex-column align-items-center justify-content-center">
+            <img src="line.png" class="fade dimg left-img" />
+            <h5 class="abc title">NandoOoOo's x Fanta</h5>
+            <img src="line.png" class="fade dimg right-img" />
+            <p class="tail my-5 fs-4">Ready to enter your weird era?</p>
+            <button type="button" class="btn btn-primary w-22 ms-0 ms-lg-2">Order Now</button>
+          </div>
+        </div>
+
+        <div class="carousel-item ">
+            <img src="bite.jpg" class="cimg d-block object-fit-cover" alt="Slide 1" />
+            <div class="carousel-caption  d-flex flex-column align-items-center justify-content-center">
+              <img src="line.png" class="dimg w-1" />
+              <h5 class="title">Bite me</h5>
+              <img src="line.png" class="dimg" />
+              <div>
+              <p class="tail my-5 fs-6">Our Cheesy Garlic Pitta's o0o0zing with good stuff.</p>
+            </div>
+            <button type="button" class="btn btn-primary  w-22 ms-0 ms-lg-2">Order Now</button>
+            </div>
+          </div>
+      </div>
+
+      <!-- Bootstrap classes for background and border -->
+      <button
+        class="carousel-control-prev bg-transparent border border-0"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden"></span>
+      </button>
+
+      <button
+        class="carousel-control-next bg-transparent border border-0"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden"></span>
+      </button>
+    </div>
+
+
+<!-- Card Section  -->
+<div class="container text-center">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="title" style="color:black">Order for Collect</h5>
+                    <p class="tail">Plan ahead and get your PERi-PERi to-go, from a restaurant near you.</p>
+                    <button class="btn">Order Collect</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="title" style="color:black">Nando's Delivery</h5>
+                    <p class="tail">We sometimes change our delivery areas based on demand - check if we’re delivering to you.</p>
+                    <button class="btn">Order Delivery</button>
+                    <div class="mt-4"><img src="logo.svg"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="title" style="color:black">Eat-in with us!</h5>
+                    <p class="tail">Find your local and grab a seat at the table. Or booth.</p>
+                    <button class="btn">Find Restaurants</button>
+                    <p>Already in the restaurant? Scan the QR code on your table!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Reward Section  -->
+<div class="container text-center">
+    <div class="center" style="color:black; text-align: center;">
+        <img src="line-black.png">
+        <h3 class="title" style="color:black;">Nando' s Rewards</h3>
+        <img src="line-black (1).png">
+        <h5 class="mt-4">Eat PERi-PERi, earn PERi-PERi!</h5>
+    </div>
+    <div class="row justify-content-between" style=" width: 100%; margin: 0;">
+        <!-- Each card takes full width on small screens (col-12) and 1/5 of the width on large screens (col-lg-2) -->
+        <div class="col-lg-2 col-12 px-1 mt-2">
+            <div class="card">
+                <img src="join.svg" class="card-img-top" alt="Card 1 Image" width="100" height="100">
+                <div class="card-body">
+                    <h5 class="title" style="color: black;font-size:25px;">Join</h5>
+                    <p class="tail">Create an account or log in if you already have one</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-2 col-12 px-1 mt-2">
+            <div class="card">
+                <img src="wallet.svg" class="card-img-top" alt="Card 2 Image" width="100" height="100">
+                <div class="card-body">
+                    <h5 class="title" style="color:black;font-size:25px;">Add to wallet</h5>
+                    <p class="tail">Add your Nando's Card to Apple Wallet</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-2 col-12 px-1 mt-2">
+            <div class="card">
+                <img src="tap.svg" class="card-img-top" alt="Card 3 Image" width="100" height="100">
+                <div class="card-body">
+                    <h5 class="title" style="color:black;font-size:25px;">Tap</h5>
+                    <p class="tail">Tap your phone on the contactless reader</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-2 col-12 px-1 mt-2">
+            <div class="card">
+                <img src="earn.svg" class="card-img-top" alt="Card 4 Image" width="100" height="100">
+                <div class="card-body">
+                    <h5 class="title" style="color:black; font-size:25px;">Earn</h5>
+                    <p class="tail">Earn a Chilli on every order of £7 or more</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-2 col-12 px-2 mt-2">
+            <div class="card">
+                <img src="redeem.svg" class="card-img-top" alt="Card 5 Image" width="100" height="100">
+                <div class="card-body">
+                    <h5 class="title" style="color:black; font-size:25px;">Redeem</h5>
+                    <p class="tail">Chillies lead to rewards and rewards mean free PERi-PERi!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="display: flex; justify-content: center; margin-top: 20px;">
+        <button class="btn btn-primary " style="margin-bottom: 20px;">Join Now</button>
+        <button class="btn btn-primary " style="margin-left: 10px; margin-bottom: 20px;">Log In</button>
+    </div>
+
+</div>
+
+<!-- Ice cream section  -->
+<div class="image-container">
+    <img src="swirl.jpg" class="full-screen-image" alt="Background Image">
+    <div class="content-overlay">
+        <h5 class="title">Bottomless Soft Swirl</h5>
+        <p>Cone or tub? Choose your fighter</p>
+        <button class="btn">Order Now</button>
+    </div>
+</div>
+
+<!-- Nando's section  -->
+<div class="container-flex">
+  <div class="row gx-0">
+      <!-- First image with text -->
+      <div class="col-12 col-md-6 p-0 ">
+          <div class="image-container">
+              <img src="nando1.webp" alt="Image 1">
+              <div class="centered-content">
+                <h5 class="title">Know a Nando's lover</h5>
+                <p>Explore our delicious options at Nando's for your spicy cravings.</p>
+                <button>Buy Now</button>
+              </div>
+
+          </div>
+      </div>
+
+      <!-- Second image with text -->
+      <div class="col-12 col-md-6 p-0">
+          <div class="image-container">
+              <img src="nando2.webp" alt="Image 2">
+              <div class="centered-content">
+                <h5 class="title">Cookin' Up Change</h5>
+                <p>Join us in making a difference through flavorful innovation.</p>
+                <button>Learn More</button>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+ 
+<!-- List Section  -->
+<div class="container-flow w-100 p-0" style="background-color: black;">
+  <div class=" list_cls container d-lg-block d-none text-white">
+    <div class="row">
+    <div class="col-md-2">
+    <h5 class="text-white">FOOD</h5>
+    <ul class="list-unstyled">
+    <li><a href="#" class="text-white">Menu</a></li>
+    <li><a href="#" class="text-white">Recipes</a></li>
+    <li><a href="#" class="text-white">Shop</a></li>
+    <li><a href="#" class="text-white">Our Food</a></li>
+    </ul>
+    </div>
+    <div class="col-md-2">
+    <h5>RESTAURANTS</h5>
+    <ul class="list-unstyled">
+    <li><a href="#" class="text-white">Find a Nando's</a></li>
+    <li><a href="#" class="text-white">View All Restaurants</a></li>
+    </ul>
+    </div>
+    <div class="col-md-2">
+    <h5>NANDO'S CARD</h5>
+    <ul class="list-unstyled">
+    <li><a href="#" class="text-white">Join now</a></li>
+    <li><a href="#" class="text-white">How it works</a></li>
+    <li><a href="#" class="text-white">Lost Card</a></li>
+    <li><a href="#" class="text-white">Log In</a></li>
+    </ul>
+    </div>
+    <div class="col-md-2">
+    <h5>EXPLORE</h5>
+    <ul class="list-unstyled">
+    <li><a href="#" class="text-white">Our Blog</a></li>
+    <li><a href="#" class="text-white">The Nando's App</a></li>
+    <li><a href="#" class="text-white">Being Sustainable</a></li>
+    <li><a href="#" class="text-white">Fighting Malaria</a></li>
+    <li><a href="#" class="text-white">Art</a></li>
+    <li><a href="#" class="text-white">Music</a></li>
+    </ul>
+    </div>
+    <div class="col-md-2">
+    <h5>HELP</h5>
+    <ul class="list-unstyled">
+    <li><a href="#" class="text-white">Search FAQs</a></li>
+    <li><a href="#" class="text-white">My Account</a></li>
+    <li><a href="#" class="text-white">Food</a></li>
+    <li><a href="#" class="text-white">Online Ordering</a></li>
+    <li><a href="#" class="text-white">Restaurants</a></li>
+    </ul>
+    </div>
+    <div class="col-md-2">
+    <h5>LEGAL</h5>
+    <ul class="list-unstyled">
+    <li><a href="#" class="text-white">Terms & Conditions</a></li>
+    <li><a href="#" class="text-white">Privacy Policy</a></li>
+    <li><a href="#" class="text-white">Cookies Policy</a></li>
+    <li><a href="#" class="text-white">Slavery Statement</a></li>
+    <li><a href="#" class="text-white">Gender Pay Gap Report</a></li>
+    <li><a href="#" class="text-white">Insurance Policy Details</a></li>
+    </ul>
+    </div>
+    </div>
+    </div>
+
+
+    <div class="accordion d-lg-none p-4" id="accordionExample">
+      <div class="accordion-item text-white border-0" style="background-color: black;">
+        <h4 class="accordion-header" id="headingOne">
+          <button class="accordion-button collapsed  text-white border-0 w-100" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" style="background-color: black;">
+            <div class="d-flex justify-content-between w-100">
+              <span>FOOD</span>
+              <span class="sign"></span>
+            </div>
+          </button>
+        </h4>
+        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white">Menu</a></li>
+              <li><a href="#" class="text-white">Recipes</a></li>
+              <li><a href="#" class="text-white">Shop</a></li>
+              <li><a href="#" class="text-white">Our Food</a></li>
+            </ul>              
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item text-white border-0" style="background-color: black;">
+        <h4 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed  text-white border-0  w-100" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="background-color: black;">
+            <div class="d-flex justify-content-between w-100">
+              <span>RESTAURANTS</span>
+              <span class="sign"></span>
+            </div>
+          </button>
+        </h4>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white">Find a Nando's</a></li>
+              <li><a href="#" class="text-white">View all Restaurants</a></li>
+             
+            </ul>              
+          </div>
+        </div>
+      </div>
+
+
+        <div class="accordion-item text-white border-0" style="background-color: black;">
+        <h4 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed  text-white border-0  w-100" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="background-color: black;">
+            <div class="d-flex justify-content-between w-100">
+              <span>NANDO'S CARD</span>
+              <span class="sign"></span>
+            </div>
+          </button>
+        </h4>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white">Join Now</a></li>
+              <li><a href="#" class="text-white">How it Works</a></li>
+              <li><a href="#" class="text-white">Lost Card</a></li>
+              <li><a href="#" class="text-white">Log In</a></li>
+            </ul>              
+          </div>
+        </div>
+      </div>
+
+        <div class="accordion-item text-white border-0" style="background-color: black;">
+        <h4 class="accordion-header" id="headingFour">
+          <button class="accordion-button collapsed  text-white border-0  w-100" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" style="background-color: black;">
+            <div class="d-flex justify-content-between w-100">
+              <span>EXPLORE</span>
+              <span class="sign"></span>
+            </div>
+          </button>
+        </h4>
+        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white">Our Blog </a></li>
+              <li><a href="#" class="text-white">The Nando's App</a></li>
+              <li><a href="#" class="text-white">Being Sustainable</a></li>
+              <li><a href="#" class="text-white"> Fighting Malaria</a></li>
+              <li><a href="#" class="text-white">This is PERi-PERi</a></li>
+              <li><a href="#" class="text-white"> Art</a></li>
+              <li><a href="#" class="text-white">  Music</a></li>
+            </ul>              
+          </div>
+        </div>
+      </div>
+     
+      <div class="accordion-item text-white border-0" style="background-color: black; border: none !important;">
+        <h4 class="accordion-header" id="headingFive">
+          <button class="accordion-button collapsed  text-white border-0  w-100" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" style="background-color: black; ">
+            <div class="d-flex justify-content-between w-100 " >
+              <span>HELP</span>
+              <span class="sign"></span>
+            </div>
+          </button>
+        </h4>
+        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white">Search FAQs </a></li>
+              <li><a href="#" class="text-white"> My Account</a></li>
+              <li><a href="#" class="text-white"> Food</a></li>
+              <li><a href="#" class="text-white">Online Ordering</a></li>
+              <li><a href="#" class="text-white">   Nando's Cards & Discounts</a></li>
+              <li><a href="#" class="text-white">Fundraising Requests</a></li>
+              <li><a href="#" class="text-white">  Sustainability</a></li>
+              <li><a href="#" class="text-white"> Contact Us</a></li>
+
+            </ul>              
+          </div>
+        </div>
+      </div>
+
+       <div class="accordion-item text-white border-0" style="background-color: black;">
+        <h4 class="accordion-header" id="headingSix">
+          <button class="accordion-button collapsed  text-white border-0  w-100" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix" style="background-color: black;">
+            <div class="d-flex justify-content-between w-100">
+              <span>LEGAL</span>
+              <span class="sign"></span>
+            </div>
+          </button>
+        </h4>
+        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white">Terms & Conditions</a></li>
+              <li><a href="#" class="text-white">  Privacy Policy</a></li>
+              <li><a href="#" class="text-white"> Cookies Policy</a></li>
+              <li><a href="#" class="text-white"> Slavery Statement</a></li>
+              <li><a href="#" class="text-white">Gender Pay Gap Report</a></li>
+              <li><a href="#" class="text-white"> Insurance Policy Details</a></li>
+              <li><a href="#" class="text-white"> NGHL Tax Strategy</a></li>
+              <li><a href="#" class="text-white"> Stakeholder Engagement</a></li>
+            </ul>              
+          </div>
+        </div>
+      </div>
+   
+    </div>
+   
+  </div>
+
+<!-- Footer Section  -->
+<div class="foot">
+    <div class="container">
+        <div class="row">
+            <!-- First column -->
+            <div class="col-lg-6 col-md-12">
+                <div class="component">
+                    <h3 class="title">Feed your app-</h3>
+                    <h3 class="title">etite</h3>
+                    <p class="tail" style="color:white">Get the Nando's app to order from</p>
+                    <p class="tail" style="color:white">your table, on-the-go or to your sofa</p>
+                    <div class="image-row">
+                        <a href="https://apps.apple.com/gb/app/nandos-uk-ie-order-now/id488574854">
+                            <img class="image" src="app-logo.png" width="200" height="100">
+                        </a>
+                        <a href="https://play.google.com/store/apps/details?id=nandos.android.app&hl=en_GB">
+                            <img class="image" src="google-logo.png" width="200" height="100">
+                        </a>
+                    </div>
+                    <p class="mt-2" style="color:white">© Nando's 2024 | <a class="list-item" href="#">Privacy Policy</a></p>
+                </div>
+            </div>
+
+            <!-- Second column -->
+            <div class="col-lg-6 col-md-12">
+                <div class="component">
+                    <h3 class="title">Only (Nando's) </h3>
+                    <h3 class="title">fans</h3>
+                    <p class="tail" style="color:white;">Sign up for hot content. Like our emails</p>
+                    <p class="tail" style="color:white;">and other juicy stuff. It’s free, too…</p>
+                    <div class="email-container">
+                        <input type="email" placeholder="Pop your email address in here" class="email-input">
+                        <button class="email-btn">
+                            <div class="arrow"></div>
+                        </button>
+                    </div>
+                    <div class="social-icons mt-4">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-snapchat-ghost"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-spotify"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+      
+      
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+      <script
+        src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh6U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"
+      ></script>
+    
+</body>
+</html>
